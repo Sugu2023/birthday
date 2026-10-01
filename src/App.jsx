@@ -8,7 +8,8 @@ import Timeline from './components/Timeline.jsx'
 import Gallery from './components/Gallery.jsx'
 import Cake from './components/Cake.jsx'
 import Confetti from './components/Confetti.jsx'
-import { HER_NAME, MY_NAME } from './content.js'
+import TwentyFive from './components/TwentyFive.jsx'
+import { COUPLE_NAME, HER_NAME, MY_NAME } from './content.js'
 
 export default function App() {
   const [opened, setOpened] = useState(false)
@@ -29,6 +30,7 @@ export default function App() {
       <Confetti trigger={celebrate} />
       <main>
         <Hero />
+        <TwentyFive />
         <LoveLetter />
         <Reasons />
         <Timeline />
@@ -38,6 +40,7 @@ export default function App() {
       <footer>
         <p className="script">Forever & always,</p>
         <p className="signature">{MY_NAME} ❤ {HER_NAME}</p>
+        <p className="couple-tag">#{COUPLE_NAME}</p>
       </footer>
     </>
   )
